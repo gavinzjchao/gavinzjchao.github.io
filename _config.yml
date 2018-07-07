@@ -1,1 +1,4 @@
-theme: jekyll-theme-cayman
+name: gavinzjchao
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title
+
