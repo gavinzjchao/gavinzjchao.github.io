@@ -3,10 +3,11 @@ layout: default
 ---
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
+Text can be *bold*, **italic**, or __strong__
 
 [Link to another page](./another-page.html).
 
-There should be whitespace between paragraphs.
+<center>There should be whitespace between paragraphs.</center>
 
 There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
 
@@ -20,6 +21,8 @@ This is a normal paragraph following a header. GitHub is a code hosting platform
 > This is a blockquote following a header.
 >
 > When something is important enough, you do it even if the odds are not in your favor.
+
+> test blcokquote
 
 ### Header 3
 
@@ -38,6 +41,19 @@ GitHubPages::Dependencies.gems.each do |gem, version|
 end
 ```
 
+```c++
+#include <iostream>
+int main() {
+	cout << "hello world!" << endl;
+	return 0;
+}
+```
+```c
+int func() {
+	printf("%s", s);
+	return 0;
+}
+```
 #### Header 4
 
 *   This is an unordered list following a header.
@@ -49,6 +65,7 @@ end
 1.  This is an ordered list following a header.
 2.  This is an ordered list following a header.
 3.  This is an ordered list following a header.
+4.  This is an ordered list following a header.
 
 ###### Header 6
 
@@ -58,6 +75,7 @@ end
 | out of stock | good and plenty   | nice  |
 | ok           | good `oreos`      | hmm   |
 | ok           | good `zoute` drop | yumm  |
+| last line| good `test`       | last  |
 
 ### There's a horizontal rule below this.
 
@@ -92,6 +110,8 @@ end
   - level 2 item
   - level 2 item
 - level 1 item
+	- level 2 last
+		- level 3 last
 
 ### Small image
 
@@ -101,7 +121,7 @@ end
 
 ![Branching](https://guides.github.com/activities/hello-world/branching.png)
 
-
+<div align=center>![Test](thumbnail.png)</div>
 ### Definition lists can be used with HTML syntax.
 
 <dl>
