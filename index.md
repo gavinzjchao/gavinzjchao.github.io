@@ -114,6 +114,8 @@ int func() {
 - level 1 item
 	- level 2 last
 		- level 3 last
+		- level 3 last
+			- level 4 last
 
 ### Small image
 
