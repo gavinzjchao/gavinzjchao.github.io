@@ -6,7 +6,7 @@ Text can be **bold**, _italic_, or ~~strikethrough~~.
 Text can be *bold*, **italic**, or __strong__
 
 [Link to another page](./another-page.html).
-[拓扑排序](./coding/toposort.md)
+[toposort](./coding/toposort.md)
 
 <center>There should be whitespace between paragraphs.</center>
 
