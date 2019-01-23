@@ -9,6 +9,8 @@ Text can be *bold*, **italic**, or __strong__
 
 [拓扑排序](./coding/toposort.md)
 
+[LeetCode Plans](./coding/plans.md)
+
 <center>There should be whitespace between paragraphs.</center>
 
 There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
