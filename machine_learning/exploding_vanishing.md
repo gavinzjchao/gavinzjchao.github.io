@@ -1,6 +1,6 @@
 ---
 layout: default
-<!--<center> $$ /quad ()$$ </center> -->
+<!--<center> $$ \quad ()$$ </center> -->
 ---
 
 # <center> 梯度爆炸/消失的原因及解决方法 </center>
@@ -25,23 +25,23 @@ or
 
 <center>  $$Y = \omega_1\,x_1 + \omega_2\,x_2 + ... + \omega_n\,x_n \quad (3) $$</center>
 
-<center> $$ Var(Y) = Var(\omega_i\,x_i) w.r.t Var(XY) = E[X^2]Var(Y) + E[Y^2]Var(X) + Var(X)Var(Y)  /quad (4)$$ </center>
+<center> $$ Var(Y) = Var(\omega_i\,x_i) w.r.t Var(XY) = E[X^2]Var(Y) + E[Y^2]Var(X) + Var(X)Var(Y)  \quad (4)$$ </center>
 
 假定输入的所有节点的mean = 0，则有：
 
-<center> $$Var(\omega_i\,x_i) = Var(\omega_i)Var(x_i) /quad (5)$$ </center>
+<center> $$Var(\omega_i\,x_i) = Var(\omega_i)Var(x_i) \quad (5)$$ </center>
 
 又已知方差的和等于和的方差，且假定输入节点服从独立同分布i.i.d，则有：
 
-<center> $$ Var(\sum_{i=1}^{n} X_i) = \sum_{i=1}^{n} Var(X_i) /quad (6)$$ </center>
+<center> $$ Var(\sum_{i=1}^{n} X_i) = \sum_{i=1}^{n} Var(X_i) \quad (6)$$ </center>
 
 即：
 
-<center> $$ Var(Y) = nVar(\omega)Var(x) /quad (7)$$ </center>
+<center> $$ Var(Y) = nVar(\omega)Var(x) \quad (7)$$ </center>
 
 如果期望Var(Y) = 1,那么有：
 
-<center> $$ Var(\omega) = \frac{1}{n} = \frac{1}{fan_in} /quad (8)$$ </center>
+<center> $$ Var(\omega) = \frac{1}{n} = \frac{1}{fan_in} \quad (8)$$ </center>
 
 
 
