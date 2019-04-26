@@ -35,6 +35,14 @@ or
 
 <center> $$ Var(\sum_{i=1}^{n} X_i) = \sum_{i=1}^{n} Var(X_i) /quad (6)$$ </center>
 
+即：
+
+<center> $$ Var(Y) = nVar(\omega)Var(x) /quad (7)$$ </center>
+
+如果期望Var(Y) = 1,那么有：
+
+<center> $$ Var(\omega) = \frac{1}{n} /quad (8)$$ </center>
+
 
 
 
