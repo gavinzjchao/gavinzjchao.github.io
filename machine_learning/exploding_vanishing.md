@@ -9,6 +9,11 @@ layout: default
 
 ## 使用xavier和he initialization来解决梯度消失
 
+> int xavier we need the variance of the
+> outputs of each layer to be equal to the variance of its inputs, and we also need the
+> gradients to have equal variance before and after flowing through a layer in the
+> reverse direction
+
 xavier在参数初始化中，一般采用truncate_normal正太分布来初始化，其中均值为0，方差为:
 
 <center> $$Var(\omega_i) = \frac{1}{fan\_in} \tag {1}$$  </center>
@@ -17,7 +22,9 @@ xavier在参数初始化中，一般采用truncate_normal正太分布来初始�
 
 <center> $$Var(\omega_i) = \frac{1}{fan\_in + fan\_out} \tag {2}$$  </center>
 
-其中fan_in为输入层的神经元个数, fan_out为输出层神经元个数,其中(1)多适用于tanh激活函数，(2)多使用于sigmoid函数. 令网络的input层有n个节点，则有
+其中fan_in为输入层的神经元个数, fan_out为输出层神经元个数,其中(1)多适用于tanh激活函数，(2)多使用于sigmoid函数. 
+
+证明如下, 令网络的input层有n个节点，则有:
 
 <center>  $$Y = \omega_1\,x_1 + \omega_2\,x_2 + ... + \omega_n\,x_n \tag {3} $$</center>
 
@@ -33,7 +40,7 @@ xavier在参数初始化中，一般采用truncate_normal正太分布来初始�
 
 <center> $$ Var(\sum_{i=1}^{n} X_i) = \sum_{i=1}^{n} Var(X_i) \tag {6}$$ </center>
 
-可以得到：
+联合(5), (6)可以得到：
 
 <center> $$ Var(Y) = nVar(\omega)Var(x) \tag {7}$$ </center>
 
