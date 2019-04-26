@@ -9,7 +9,7 @@ layout: default
 
 ## 使用xavier和he initialization来解决梯度消失
 
-> int xavier we need the variance of the
+> in xavier we need the variance of the
 > outputs of each layer to be equal to the variance of its inputs, and we also need the
 > gradients to have equal variance before and after flowing through a layer in the
 > reverse direction
@@ -20,7 +20,7 @@ xavier在参数初始化中，一般采用truncate_normal正太分布来初始�
 
 或者：
 
-<center> $$Var(\omega_i) = \frac{1}{fan\_in + fan\_out} \tag {2}$$  </center>
+<center> $$Var(\omega_i) = \frac{2}{fan\_in + fan\_out} \tag {2}$$  </center>
 
 其中fan_in为输入层的神经元个数, fan_out为输出层神经元个数,其中(1)多适用于tanh激活函数，(2)多使用于sigmoid函数. 
 
