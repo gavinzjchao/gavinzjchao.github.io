@@ -55,7 +55,7 @@ xavier在参数初始化中，一般采用truncate_normal正太分布来初始�
 <center> $$ Var(\omega) = \frac{1}{n} = \frac{1}{fan\_in} \tag {8}$$ </center>
 
 
-### 实现
+### xavier 实现
 
 ```python
 import numpy as np
