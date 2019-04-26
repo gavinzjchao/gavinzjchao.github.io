@@ -8,8 +8,8 @@ layout: default
 
 ## 使用xavier和he initialization来解决梯度消失
 
- xavier在参数初始化中，采用均值为0，方差为
- $$Var(\omega\_i) = \sqrt{\frac{1}{fan\_in}}$$
+xavier在参数初始化中，采用均值为0，方差为:
+$$Var(\omega_i) = \sqrt{\frac{1}{fan\_in}}$$
 
 
 ## mnist数据集中xavier和normal的比较
