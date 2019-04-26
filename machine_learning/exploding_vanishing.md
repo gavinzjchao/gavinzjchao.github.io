@@ -25,7 +25,7 @@ xavier在参数初始化中，一般采用truncate_normal正太分布来初始�
 
 <center> $$Var(XY) = E[X^2]Var(Y) + E[Y^2]Var(X) + Var(X)Var(Y)  \tag {4}$$ </center>
 
-假定输入的所有节点的mean = 0，则有：
+假定输入的所有节点的mean = 0，则有E[X^2] = E[Y^2] = 0化简后得：
 
 <center> $$Var(\omega_i\,x_i) = Var(\omega_i)Var(x_i) \tag {5}$$ </center>
 
