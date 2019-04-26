@@ -9,7 +9,7 @@ layout: default
 
 ## 使用xavier和he initialization来解决梯度消失
 
-> \quad In xavier we need the variance of the
+> In xavier we need the variance of the
 > outputs of each layer to be equal to the variance of its inputs, and we also need the
 > gradients to have equal variance before and after flowing through a layer in the
 > reverse direction
