@@ -5,12 +5,11 @@ layout: default
 
 # <center> Vanishing or Exploding Problem </center>
 
-## 梯度消失与梯度爆炸
 
-## 使用xavier和he initialization来解决梯度消失
-
+# <center> Using Xavier And He Initialization Solve Vanish or Saturate </center>
 
 ### 原理与证明
+
 > In xavier we need the variance of the
 > outputs of each layer to be equal to the variance of its inputs, and we also need the
 > gradients to have equal variance before and after flowing through a layer in the
