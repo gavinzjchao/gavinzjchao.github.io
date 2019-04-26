@@ -59,6 +59,8 @@ xavier在参数初始化中，一般采用truncate_normal正太分布来初始�
 
 ```python
 import numpy as np
+import tensorflow as tf
+
 np.random.seed(42)
 
 input_size = 128
