@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<center> # *梯度爆炸/消失的原因及解决方法* </center>
+<center> # 梯度爆炸/消失的原因及解决方法 </center>
 
 ## 梯度消失与梯度爆炸
 
