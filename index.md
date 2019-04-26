@@ -2,7 +2,7 @@
 layout: default
 ---
 
-##深度学习理论  
+## 深度学习理论  
 
 [Vanishing or Exploding Problem](./machine_learning/exploding_vanishing.md)
 
