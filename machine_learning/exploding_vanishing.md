@@ -9,6 +9,8 @@ layout: default
 
 ## 使用xavier和he initialization来解决梯度消失
 
+
+### 原理与证明
 > In xavier we need the variance of the
 > outputs of each layer to be equal to the variance of its inputs, and we also need the
 > gradients to have equal variance before and after flowing through a layer in the
@@ -51,6 +53,27 @@ xavier在参数初始化中，一般采用truncate_normal正太分布来初始�
 如果希望Var(Y) = 1,那么有：
 
 <center> $$ Var(\omega) = \frac{1}{n} = \frac{1}{fan\_in} \tag {8}$$ </center>
+
+
+### 实现
+
+```python
+import numpy as np
+np.random.seed(42)
+
+input_size = 128
+output_size = 64
+
+#xavier with normal distribution
+mu = 0.
+sigma = np.sqrt(2. / (input_size + output_size)) 
+w = sigma * np.random.randn(input_size, output_size) + mu
+
+# tensorflow usage
+tf.contrib.layers.variance_scaling_initializer(factor=1.0, mode='FAN_AVG', uniform=False, seed=None, dtype=tf.float32)
+```
+
+
 
 
 
