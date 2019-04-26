@@ -6,7 +6,7 @@ layout: default
 # <center> Vanishing or Exploding Problem </center>
 
 
-# <center> Using Xavier And He Initialization Solve Vanish or Saturate </center>
+# <center> Xavier And He Initialization Solve Vanish or Saturate </center>
 
 ### 原理与证明
 
