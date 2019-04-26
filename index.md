@@ -2,17 +2,36 @@
 layout: default
 ---
 
+##深度学习理论  
+
+[Vanishing or Exploding Problem](./machine_learning/exploding_vanishing.md)
+
+
+
+## 编程基础
+
+[拓扑排序](./coding/toposort.md)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 Text can be *bold*, **italic**, or __strong__
 
 [Link to another page](./another-page.html).
-
-[拓扑排序](./coding/toposort.md)
-
-[LeetCode Plans](./coding/plans.md)
-
-[DeepTheary/梯度爆炸/消失的原因及解决方法](./machine_learning/exploding_vanishing.md)
-
 <center>There should be whitespace between paragraphs.</center>
 
 There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
