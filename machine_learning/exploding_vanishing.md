@@ -25,7 +25,7 @@ or
 
 <center>  $$Y = \omega_1\,x_1 + \omega_2\,x_2 + ... + \omega_n\,x_n \quad (3) $$</center>
 
-<center> $$ Var(Y) = Var(\omega_i\,x_i) w.r.t Var(XY) = E[X^2]Var(Y) + E[Y^2]Var(X) + Var(X)Var(Y)  \quad (4)$$ </center>
+<center> $$Var(XY) = E[X^2]Var(Y) + E[Y^2]Var(X) + Var(X)Var(Y)  \quad (4)$$ </center>
 
 假定输入的所有节点的mean = 0，则有：
 
