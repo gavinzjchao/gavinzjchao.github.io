@@ -50,7 +50,7 @@ xavier在参数初始化中，一般采用truncate_normal正太分布来初始�
 
 <center> $$ Var(Y) = nVar(\omega)Var(x) \tag {7}$$ </center>
 
-如果希望Var(Y) = 1,那么有：
+如果希望Var(Y) = Var(X), 那么有：
 
 <center> $$ Var(\omega) = \frac{1}{n} = \frac{1}{fan\_in} \tag {8}$$ </center>
 
