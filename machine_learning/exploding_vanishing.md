@@ -40,7 +40,7 @@ xavier在参数初始化中，一般采用truncate_normal正太分布来初始�
 
 假定输入的所有节点的mean = 0，则有$$E[X^2] = E[Y^2] = 0$$化简后得：
 
-<center> $$Var(\omega_i\,x_i) = Var(\omega_i)Var(x_i) \tag {5}$$ </center>
+<center> $$Var(\omega_i x_i) = Var(\omega_i)Var(x_i) \tag {5}$$ </center>
 
 又已知方差的和等于和的方差，且假定输入节点服从独立同分布i.i.d，则有：
 
@@ -74,11 +74,5 @@ w = sigma * np.random.randn(input_size, output_size) + mu
 # tensorflow usage
 tf.contrib.layers.variance_scaling_initializer(factor=1.0, mode='FAN_AVG', uniform=False, seed=None, dtype=tf.float32)
 ```
-
-
-
-
-
-
 
 ## mnist数据集中xavier和normal的比较
