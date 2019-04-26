@@ -41,7 +41,7 @@ or
 
 如果期望Var(Y) = 1,那么有：
 
-<center> $$ Var(\omega) = \frac{1}{n} /quad (8)$$ </center>
+<center> $$ Var(\omega) = \frac{1}{n} = \frac{1}{fan_in} /quad (8)$$ </center>
 
 
 
