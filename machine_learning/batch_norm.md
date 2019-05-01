@@ -14,9 +14,9 @@ layout: default
 
 其中$$\mu$$为当前batch基于**每一列**的均值，$$\sigma$$为基于**每一列**的标准差，即：
 
-<center> $$ \mu = \sum_{i=1}^{n} x_i \tag {2}$$ </center>
+<center> $$ \mu = \frac{1}{n} \sum_{i=1}^{n} x_i \tag {2}$$ </center>
 
-<center> $$ \sigma^2 = \sum_{i=1}^{n} (x_i - \mu)^2\tag {3}$$ </center>
+<center> $$ \sigma^2 = \frac{1}{n} \sum_{i=1}^{n} (x_i - \mu)^2\tag {3}$$ </center>
 
 其中$$\gamma$$和$$\beta$$为trainable=True即在训练中会基于梯度回传来更新，而$$\mu, $$\sigma$$为计算结果，一般
 在实际使用中分为训练阶段和服务阶段，训练阶段通过moving_average来更新这两个值，而服务阶段需要保存该两个值
