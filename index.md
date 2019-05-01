@@ -4,7 +4,7 @@ layout: default
 
 ## 深度学习理论  
 
-[Vanishing or Exploding Problem With Xavier and He Initializer](./machine_learning/exploding_vanishing.md)
+[梯度消失或爆炸的原因和调优方式](./machine_learning/exploding_vanishing.md)
 
 
 

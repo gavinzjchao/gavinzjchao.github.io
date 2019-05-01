@@ -3,10 +3,10 @@ layout: default
 <!--<center> $$ \tag {}$$ </center> -->
 ---
 
-# <center> Vanishing or Exploding Problem </center>
+## <center> 梯度消失或爆炸的原因和调优方 </center>
 
 
-# <center> Xavier/He Initialization Solve Vanish or Saturate </center>
+## <center> 使用Xavier/He Initialization减缓梯度消失问题 </center>
 
 ### 原理与证明
 
