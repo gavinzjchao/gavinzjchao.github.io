@@ -13,7 +13,7 @@ layout: default
  2. 在部署线上服务时，要主动将均值与方差全部保存下来，确保拿到正确的均值方差
 
 参考resnet给出的bn层使用方法
- '''python
+```python
  def _build_graph(self):
 	 ...
 	 _extra_train_ops = []
@@ -69,10 +69,10 @@ layout: default
         x, mean, variance, beta, gamma, 0.001)
     y.set_shape(x.get_shape())
     return y
- '''
+```
 
  参考mnist使用bn层的一个case
- ''' python
+ ```python
 		conv1 = tf.layers.conv2d(image, filters=32, kernel_size=[3, 3], strides=[1, 1], padding='same',
                              activation=tf.nn.relu,
                              kernel_initializer=tf.truncated_normal_initializer(stddev=0.1),
@@ -104,8 +104,7 @@ layout: default
 
     # save all variables
     # saver = tf.train.Saver(max_to_keep=5)
-
- '''
+```
 
 > In xavier we need the variance of the
 > outputs of each layer to be equal to the variance of its inputs, and we also need the
