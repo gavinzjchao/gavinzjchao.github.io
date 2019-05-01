@@ -18,7 +18,7 @@ layout: default
 
 <center> $$ \sigma^2 = \frac{1}{n} \sum_{i=1}^{n} (x_i - \mu)^2\tag {3}$$ </center>
 
-其中$$\gamma$$和$$\beta$$为trainable=True即在训练中会基于梯度回传来更新，而$$\mu, $$\sigma$$为计算结果，一般
+其中$$\gamma$$和$$\beta$$为trainable=True即在训练中会基于梯度回传来更新，而$$\mu$$, $$\sigma$$为计算结果，一般
 在实际使用中分为训练阶段和服务阶段，训练阶段通过moving_average来更新这两个值，而服务阶段需要保存该两个值
 确保能够拿到训练样本的累积平均均值和方差，一般服务时mini-batch也不同，出于性能考虑，一般多为1
 
