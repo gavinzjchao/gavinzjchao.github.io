@@ -5,6 +5,25 @@ layout: default
 
 ## <center> 批正则化原理 </center>
 
+### CIS问题
+
+### bn基本原理
+批正则化定义如下:
+
+<center> $$ y = \gamma \frac{x - \mu}{\sigma} + \beta \tag {1}$$ </center>
+
+其中$$\mu$$为当前batch基于**每一列**的均值，$$\sigma$$为基于**每一列**的方差，即：
+
+<center> $$ \mu = \sum_{i=1}^{n} x_i \tag {2}$$ </center>
+
+<center> $$ \sigma = \sum_{i=1}^{n} (x_i - \mu)^2\tag {3}$$ </center>
+
+其中$$\gamma$$和$$\beta$$为trainable=True即在训练中会基于梯度回传来更新，而$$\mu, $$\sigma$$为计算结果，一般
+在实际使用中分为训练阶段和服务阶段，训练阶段通过moving_average来更新这两个值，而服务阶段需要保存该两个值
+确保能够拿到训练样本的累积平均均值和方差，一般服务时mini-batch也不同，出于性能考虑，一般多为1
+
+### bn梯度计算与更新
+
 
 ## <center> 实际Batch Normalization正确落地姿势 </center>
 
