@@ -86,13 +86,13 @@ layout: default
     bn2 = tf.layers.batch_normalization(conv2, training=phase, name='bn2')
     pool2 = tf.layers.max_pooling2d(bn2, pool_size=[2, 2], strides=[2, 2], padding='same', name='pool2')
 		....
-    # 在执行前，先建立control_dependices
-		update_ops = tf.get_collection(tf.GraphKeys.UPDATE_OPS)
-	  with tf.control_dependencies(update_ops):
+	# 在执行前，先建立control_dependices
+	update_ops = tf.get_collection(tf.GraphKeys.UPDATE_OPS)
+	with tf.control_dependencies(update_ops):
         grads = opt.compute_gradients(cross_entropy)
         train_op = opt.apply_gradients(grads, global_step=global_step)
 
-		# 保存时采用主动保存
+	# 保存时采用主动保存
     var_list = tf.trainable_variables()
     if global_step is not None:
         var_list.append(global_step)
