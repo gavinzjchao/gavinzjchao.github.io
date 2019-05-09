@@ -52,6 +52,11 @@ layout: default
 	- early stop
 	- learning rate scheduale
 
+- metrics
+	- AUC, GroupAUC
+	- F1 
+	- ND..
+
 ### 超参调节
 
 ### 特征工程
