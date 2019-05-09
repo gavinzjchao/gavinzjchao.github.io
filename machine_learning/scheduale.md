@@ -13,6 +13,7 @@ layout: default
 5. LSTM(bidirection, deep), GRU
 6. W&D, Youtube Matching, DCN, DIN, ESMM, DIEN, DeepFM, XDeepFM
 7. LeNet, ResNet, Inception, AlexNet, ...
+8. W2V, FastText, Seq2Seq
 
 
 ### 模型调优
