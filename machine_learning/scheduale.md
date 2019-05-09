@@ -51,7 +51,7 @@ layout: default
 - tricks
 	- dropout
 	- early stop
-	- learning rate scheduale
+	- learning rate decay
 
 - metrics
 	- AUC, GroupAUC
