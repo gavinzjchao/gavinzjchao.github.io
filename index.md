@@ -10,3 +10,5 @@ layout: default
 
 [Batch Normalization原理到实践](./machine_learning/batch_norm.md)
 
+[机器学习评价指标](./machine_learning/metric.md)
+
