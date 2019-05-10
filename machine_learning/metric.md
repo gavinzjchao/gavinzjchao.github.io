@@ -3,7 +3,9 @@ layout: default
 <!--<center> $$ \tag {}$$ </center> -->
 ---
 
-## <center> AUC  </center>
+## <center> 机器学习评价指标  </center>
+
+### AUC以及ROC
 
 ```python
 def roc(datas, pos, neg):
