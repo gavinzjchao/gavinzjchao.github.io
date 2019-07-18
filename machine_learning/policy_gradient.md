@@ -29,11 +29,11 @@ layout: default
 	$$
 
 其中，因为对数的导数等于该数的导数, 又因为期望等于发生该事件的概率乘以该事件，因而
-可以将多出的$$p_\theta(\tau)$$引入到期望表达式内。
+可以将多出的$$ p_\theta(\tau) $$引入到期望表达式内。
 
 又根据一次trajectory发生概率的表达式求对数有如下：
 
-<center> $$ \bigtriangledown p_\theta(\tau) = \bigtriangledown log p(s_1) + \sum_{t = 1}^{T} l\bigtriangledown log p_\theta(a_t|s_t) + \sum_{t=1}^{T} \bigtriangledown  log p(s_{t+1}|s_t, a_t, \pi) $$ </center>
+<center> $$ \bigtriangledown p_\theta(\tau) = \bigtriangledown log p(s_1) + \sum_{t = 1}^{T} \bigtriangledown log p_\theta(a_t|s_t) + \sum_{t=1}^{T} \bigtriangledown  log p(s_{t+1}|s_t, a_t, \pi) $$ </center>
 
 消除与$$\theta$$无关的常数项，仅剩下中间的项，同时对期望的梯度无法表示，因而可以采用采样的方式来生成多个episode进而求平均值获取最终结果，如下：
 
