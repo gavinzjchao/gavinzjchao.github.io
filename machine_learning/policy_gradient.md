@@ -33,7 +33,7 @@ layout: default
 
 又根据一次trajectory发生概率的表达式求对数有如下：
 
-<center> $$ \bigtriangledown p_\theta(\tau) = log p(s_1) + \sum_{t = 1}^{T} log p_\theta(a_t|s_t) + \sum_{t=1}^{T} log p(s_{t+1}|s_t, a_t, \pi) $$ </center>
+<center> $$ \bigtriangledown p_\theta(\tau) = \bigtriangledown log p(s_1) + \sum_{t = 1}^{T} l\bigtriangledown log p_\theta(a_t|s_t) + \sum_{t=1}^{T} \bigtriangledown  log p(s_{t+1}|s_t, a_t, \pi) $$ </center>
 
 消除与\theta无关的常数项，仅剩下中间的项，同时对期望的梯度无法表示，因而可以采用采样的方式来生成多个episode进而求平均值获取最终结果，如下：
 
