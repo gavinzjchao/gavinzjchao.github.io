@@ -37,7 +37,7 @@ layout: default
 
 消除与\theta无关的常数项，仅剩下中间的项，同时对期望的梯度无法表示，因而可以采用采样的方式来生成多个episode进而求平均值获取最终结果，如下：
 
-<center> $$ \frac{1}{N} sum_{n = 1}^{N} sum_{t = 1}^{T^n} R(\tau^n) \bigtriangledown log p_\theta(a_t|s_t) $$ </center>
+<center> \bigtriangledown \bar(R(\tau)) = $$ \frac{1}{N} \sum_{n = 1}^{N} \sum_{t = 1}^{T^n} R(\tau^n) \bigtriangledown log p_\theta(a_t|s_t) $$ </center>
 
 
 > In xavier we need the variance of the
