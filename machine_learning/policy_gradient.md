@@ -22,7 +22,9 @@ layout: default
 <center> $$ \bar{R(\tau)} = \sum_{\tau}R(\tau)  p_\theta(\tau)$$ </center>
 
 对reward的梯度有:
-  $$ \bigtriangledown \bar{R(\tau)} = \bigtriangledown \sum_{\tau} R(\tau) p_\theta(\tau) \\
+
+  $$ \bigtriangledown \bar{R(\tau)} = \\
+		\bigtriangledown \sum_{\tau} R(\tau) p_\theta(\tau) \\
 		= \sum_{\tau} R(\tau) p_\theta(\tau) \frac{\bigtriangledown p_\theta(\tau)}{p_\theta(\tau)} \\
 		= E_\theta~p_\theta(\tau) [\sum_{\tau} R(\tau) log p_\theta(\tau)]
 	$$
