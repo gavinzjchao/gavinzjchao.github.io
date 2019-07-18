@@ -5,21 +5,21 @@ layout: default
 
 ## <center> Policy Gradient </center>
 
-> policy gradient目标是使得policy($$\pai$$)的长期期望收益最大化即 maximum long-term expected reward,
-> 训练中样本为state，probability action， action，其中state可以是flattern图像，或其他特征，probability action为$$\pai$$网络
+> policy gradient目标是使得policy($$\pi$$)的长期期望收益最大化即 maximum long-term expected reward,
+> 训练中样本为state，probability action， action，其中state可以是flattern图像，或其他特征，probability action为$$\pi$$网络
 > 拟合函数输出的softmax结果， action为样本生成中获得的实际值。
 
 定义一个trajectory为一组(state, action)集合，即
-<center>  $$ trajectory \tau = {s_1, a_1, s_2, a_2, ... s_n, a_n} $$</center>
+<center>  $$ trajectory   \tau = \{s_1, a_1, s_2, a_2, ... s_n, a_n\} $$</center>
 
 则在给定的policy下获取一种trajectory的概率，表示为：
 <center> $$ \rho_\theta(\tau) = p(s_1)p_\theta(a_1|s_1)p(s_2|s_1, a_1, \pi)...p(a_n|s_n)p(s_n+1|s_n, a_n, \pi) $$ </center>
 
 因为我们关注的是长期期望收益最大化，因而reward定义如下：
-<center> $$ R(\tau) = sum_{t = 1}^{T} r_t $$ </center>
+<center> $$ R(\tau) = \sum_{t = 1}^{T} r_t $$ </center>
 
 进而得到目标函数定义，其中采用期望收益最大化不易计算，因而一般采用采样来近似表示期望收益:
-<center> $$ \bar{R(\tau)} = sum_{\tau}R(\tau)  p_\theta(\tau)$$ </center>
+<center> $$ \bar{R(\tau)} = \sum_{\tau}R(\tau)  p_\theta(\tau)$$ </center>
 
 
 > In xavier we need the variance of the
