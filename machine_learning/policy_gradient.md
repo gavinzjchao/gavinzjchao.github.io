@@ -28,7 +28,7 @@ layout: default
 		= E_\theta~p_\theta(\tau) [\sum_{\tau} R(\tau) \bigtriangledown log p_\theta(\tau)]
 	$$
 
-其中，因为对数的导数等于该数的导数，即$$ delta log(x) = \frac{1}{x}. 又因为期望等于发生该事件的概率乘以该事件，因而
+其中，因为对数的导数等于该数的导数, 又因为期望等于发生该事件的概率乘以该事件，因而
 可以将多出的$$p_\theta(\tau)$$引入到期望表达式内。
 
 又根据一次trajectory发生概率的表达式求对数有如下：
