@@ -23,10 +23,9 @@ layout: default
 
 对reward的梯度有:
 
-  $$ \bigtriangledown \bar{R(\tau)} = \\
-		\bigtriangledown \sum_{\tau} R(\tau) p_\theta(\tau) \\
+  $$ \bigtriangledown \bar{R(\tau)} = \bigtriangledown \sum_{\tau} R(\tau) p_\theta(\tau) \\
 		= \sum_{\tau} R(\tau) p_\theta(\tau) \frac{\bigtriangledown p_\theta(\tau)}{p_\theta(\tau)} \\
-		= E_\theta~p_\theta(\tau) [\sum_{\tau} R(\tau) log p_\theta(\tau)]
+		= E_\theta~p_\theta(\tau) [\sum_{\tau} R(\tau) \bigtriangledown log p_\theta(\tau)]
 	$$
 
 其中，因为对数的导数等于该数的导数，即$$ delta log(x) = \frac{1}{x}. 又因为期望等于发生该事件的概率乘以该事件，因而
