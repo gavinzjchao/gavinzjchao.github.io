@@ -15,6 +15,11 @@ layout: default
 则在给定的policy下获取一种trajectory的概率，表示为：
 <center> $$ \rho_\theta(\tau) = p(s_1)p_\theta(a_1|s_1)p(s_2|s_1, a_1, \pi)...p(a_n|s_n)p(s_n+1|s_n, a_n, \pi) $$ </center>
 
+因为我们关注的是长期期望收益最大化，因而reward定义如下：
+<center> $$ R(\tau) = sum_{t = 1}^{T} r_t $$ </center>
+
+进而得到目标函数定义，其中采用期望收益最大化不易计算，因而一般采用采样来近似表示期望收益:
+<center> $$ \bar{R(\tau)} = sum_{\tau}R(\tau)  p_\theta(\tau)$$ </center>
 
 
 > In xavier we need the variance of the

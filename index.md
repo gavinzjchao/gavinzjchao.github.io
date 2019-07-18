@@ -12,3 +12,4 @@ layout: default
 
 [机器学习评价指标](./machine_learning/metric.md)
 
+[policy gradient](./machine_learning/policy_gradient.md)
