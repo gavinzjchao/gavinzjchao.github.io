@@ -4,6 +4,18 @@ layout: default
 ---
 
 ## <center> On Policy to Off Policy</center>
+> 当agent直接与environment进行交互获取action，reward时为On Policy，而当agent使用的trajectory是由另一个agent
+> 产生的，这个时候即为Off Policy。在算法上，On Policy的样本生成后仅能使用一次，因为模型的参数会被环境依赖。而Off Policy
+> 不存在该问题，因而可以多次使用另一个模型(policy)生成的样本来训练并使得参数收敛，相对来看能够省去大量样本生成过程。
+
+### importance sampling以及存在的问题与应对
+当从一个分布$$p(x)$$中采样样本$$x^i$$时，可表述为如下。
+
+而当我们拿不到该分布时，可以使用其他分布来描述，这就是Off Policy产生的数学基础，
+
+该表示方法采样中因为引入了系数，则即使存在相同的期望，但他们的方差并不相同，因而无论是后面的TRPO还是PPOs都设法去消除该转换带来的Variant差异,
+如下证明了差异的对比
+
 
 ## <center> PPO, TRPO, PPO2 </center>
 
