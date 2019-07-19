@@ -13,3 +13,5 @@ layout: default
 [机器学习评价指标](./machine_learning/metric.md)
 
 [policy gradient](./machine_learning/policy_gradient.md)
+
+[On Policy to Off Policy and PPOs](./machine_learning/on_policy_to_off_policy_and_PPOs.md)
